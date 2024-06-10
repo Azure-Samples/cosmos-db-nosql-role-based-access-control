@@ -13,7 +13,7 @@ products:
 - azure-container-registry
 - azure-cosmos-db
 - azure-key-vault
-urlFragment: sample
+urlFragment: template
 name: Full stack role-based access control application for Azure Container Apps and Azure Comsos DB for NoSQL
 description: Sample full stack role-based access control solution that uses both Azure-based control plane permissions and Azure Cosmos DB for NoSQL-based data plane permissions.
 ---
