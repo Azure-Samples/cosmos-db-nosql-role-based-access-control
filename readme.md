@@ -1,4 +1,25 @@
-## Full stack role-based access control for Azure Comsos DB for NoSQL
+---
+page_type: sample
+languages:
+- aspx-csharp
+- azdeveloper
+- bicep
+- csharp
+- data-api-builder
+products:
+- aspnet-core
+- azure
+- azure-container-apps
+- azure-container-registry
+- azure-cosmos-db
+- azure-key-vault
+urlFragment: sample
+name: Full stack role-based access control application for Azure Container Apps and Azure Comsos DB for NoSQL
+description: Sample full stack role-based access control solution that uses both Azure-based control plane permissions and Azure Cosmos DB for NoSQL-based data plane permissions.
+---
+<!-- YAML front-matter schema: https://review.learn.microsoft.com/en-us/help/contribute/samples/process/onboarding?branch=main#supported-metadata-fields-for-readmemd -->
+
+## Full stack role-based access control application for Azure Container Apps and Azure Comsos DB for NoSQL
 
 Sample full stack role-based access control solution that uses both Azure-based control plane permissions and Azure Cosmos DB for NoSQL-based data plane permissions.
 
