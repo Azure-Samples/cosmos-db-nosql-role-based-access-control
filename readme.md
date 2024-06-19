@@ -21,6 +21,8 @@ description: Sample full stack role-based access control solution that uses both
 
 ## Full stack role-based access control application for Azure Container Apps and Azure Comsos DB for NoSQL
 
+![Diagram of the current location ('Solution') in the sequence of the deployment guide.](media/map.svg)
+
 Sample full stack role-based access control solution that uses both Azure-based control plane permissions and Azure Cosmos DB for NoSQL-based data plane permissions.
 
 ## Tools
