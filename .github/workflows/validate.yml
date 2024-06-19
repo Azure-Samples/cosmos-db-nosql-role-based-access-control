@@ -12,9 +12,9 @@ jobs:
     container: mcr.microsoft.com/dotnet/sdk:8.0
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4     
+        uses: actions/checkout@v4
       - name: Check .NET version
-        run: dotnet --version- 
+        run: dotnet --version
       - name: Check .NET code format
         run: dotnet format --verify-no-changes
         working-directory: ./src
