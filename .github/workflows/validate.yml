@@ -1,16 +1,20 @@
-name: Validate .NET solution
+name: Check .NET code formatting
 on:
-  workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
   pull_request:
+    branches: [ "main" ]
   schedule:
-    - cron: '0 0 * * 2'
+    - cron: '23 4 * * 5'
 jobs:
-  validate-dotnet:
-    name: Validate .NET solution
-    uses: azure-samples/code-validation/.github/workflows/dotnet.yml@main
-    with:
-      version: '8.0'
-      working-directory: './src'
+  dotnet-format:
+    runs-on: ubuntu-latest
+    container: mcr.microsoft.com/dotnet/sdk:8.0
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4     
+      - name: Check .NET version
+        run: dotnet --version- 
+      - name: Check .NET code format
+        run: dotnet format --verify-no-changes
+        working-directory: ./src
