@@ -1,4 +1,4 @@
-name: Check .NET code formatting
+name: Validate .NET solution
 on:
   push:
     branches: [ "main" ]
@@ -8,6 +8,7 @@ on:
     - cron: '23 4 * * 5'
 jobs:
   dotnet-format:
+    name: Check code formatting
     runs-on: ubuntu-latest
     container: mcr.microsoft.com/dotnet/sdk:8.0
     steps:
